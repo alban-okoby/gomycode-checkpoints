@@ -1,1 +1,1 @@
-# gmc-checkpoints
+# GomyCode School of Technology (Checkpoints)
