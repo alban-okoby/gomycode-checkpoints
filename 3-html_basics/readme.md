@@ -1,4 +1,6 @@
 ## Html Basics (portfolio project)
+<img src="./screenshots/portfolio.png" />
+
 <img src="./screenshots/navbar_home.PNG" />
 
 <img src="./screenshots/about.PNG" />

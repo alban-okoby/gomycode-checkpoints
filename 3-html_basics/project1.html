@@ -1,176 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Alban Okoby | okoby Emmanuel Alban" />
+    <meta
+      name="description"
+      content="Emmanuel Alban Okoby is a developer, trainer, and mentor who designs website and web application interfaces | this is one of his personal works named Personal portfolio_1"
+    />
+    <title>ALBAN OKOBY | Software Engineer</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alban Okoby - Software Engineer</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-    }
+    <link rel="shortcut icon" type="image/x-icon" href="assets/image/pro.JPG" />
 
-    header {
-      background-color: #333;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Tangerine"
+    />
+    <!-- font-awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- custom css -->
+    <!-- <link rel="stylesheet" href="assets/css/main.css" /> -->
+  </head>
+  <body>
+    <!-- Author: EMMANUEL ALBAN OKOBY -->
+    <header>
+      <div class="utilisateur">
+        <a href="assets/image/me.png">
+          <img
+            src="assets/image/me.png"
+            alt="Alban Okoby | Emmanuel Alban Okoby | Cerveau+ | Alban profile photo"
+          />
+        </a>
+        <h3 class="nom">Alban Okoby</h3>
+        <p>Software Engineer <br /></p>
+        <div class="phones">
+          <a href="tel:+2250566596741">+225 05 665 967 41</a> <br />
+          <a href="tel:+2250767856449">+225 07 678 564 49</a>
+        </div>
+      </div>
+      <div class="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#apropos">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <li id="toggle-btn" class="fas fa-moon"></li>
 
-    nav ul {
-      list-style-type: none;
-      padding: 0;
-    }
+    <div id="menuIcon" class="fas fa-bars"></div>
 
-    nav ul li {
-      display: inline;
-      margin: 0 15px;
-    }
+    <!-- Home Section -->
+    <section class="home" id="home">
+      <h3>Hello world!</h3>
+      <h1>
+        I am
+        <span>Alban Okoby</span>
+      </h1>
+      <p>
+        Passionate about new scientific and digital approaches. I have
+        <strong id="xp-number">4</strong> years of experience in general teaching and IT development. Independent
+        and self-taught, <br />
+        I hold a degree in computer science and digital technologies. I love CRAC (Creativity, Reactivity, Adaptability, and Curiosity) in teams or solo.<br />
+        If it's magnificent, what else can I say?
+      </p>
+      <p>
+        <cite>
+          "Share knowledge, know-how, and soft skills, just another line of code for a better world <code> <\></code>."
+        </cite>
+      </p>
+      <a href="#apropos">
+        <button class="btn">About? <i class="fas fa-user"></i></button>
+      </a>
+    </section>
+    <!-- End Home Section -->
 
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
+    <!-- About Section -->
+    <section class="about" id="apropos">
+      <h2 class="heading">About <span class="the_span">Me</span></h2>
+      <article class="row">
+        <div class="info">
+          <h3><span>Full Name:</span> Alban Emmanuel Okoby</h3>
+          <h3><span>Birthday:</span> December 17th</h3>
+          <h3><span>Qualification:</span> Bachelor's degree of Science <br> Certified Software Engineer</h3>
+          <h3>
+            <span>Position(s):</span> Software Developer, Technical Consultant, Middle School Teacher
+          </h3>
+          <h3><span>Languages:</span> French, English (IT)</h3>
+        </div>
+        <aside class="counter">
+          <div class="box">
+            <span>+4</span>
+            <h3>Years of experience</h3>
+          </div>
+          <div class="box">
+            <span>+7</span>
+            <h3>Completed projects</h3>
+          </div>
+          <div class="box">
+            <span>+20</span>
+            <h3>Satisfied clients</h3>
+          </div>
+          <div class="box">
+            <span>+5</span>
+            <h3>Training sessions organized</h3>
+          </div>
+          <div class="box">
+            <span>+26</span>
+            <h3>Certifications</h3>
+          </div>
+        </aside>
+      </article>
+    </section>
+    <!-- End About Section -->
 
-    section {
-      padding: 2rem;
-      margin: 1rem;
-      background-color: white;
-      border-radius: 8px;
-    }
+    <!-- Education Section -->
+    <section class="education" id="education">
+      <h2 class="heading">
+        My<span> Educational / Professional Journey</span>
+      </h2>
+      <article class="box-container">
+        <div class="box">
+          <i class="fas fa-graduation-cap"></i>
+          <span class="year">2018</span>
+          <h3>Scientific Baccalaureate</h3>
+          <p>
+            Scientific background (Maths, Physics, Science and Technology) in secondary school
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-graduation-cap"></i>
+          <span>2019</span>
+          <h3>Web Integrator</h3>
+          <p>
+            I learned how to integrate mockups of websites and web applications with professionals in the field.
+            Alongside my algorithm, networking, and security courses.
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-graduation-cap"></i>
+          <span>2020</span>
+          <h3>Web Integrator and Social Manager</h3>
+          <p>
+            Gaining more responsibility, I was trusted with social media management and article writing for individuals.
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-graduation-cap"></i>
+          <span>Class of 2021</span>
+          <h3>Bachelor's Degree Graduate</h3>
+          <p>
+            This year I completed my Bachelor's in IT-SN (Information Technology and Digital Science).
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-graduation-cap"></i>
+          <span>2020-2022</span>
+          <h3>Middle School Math Teacher</h3>
+          <p>
+            In parallel, I taught math, focusing on algebra, analysis, geometry, and statistics at Private School Rose d'Ivoire in Guitry.
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-graduation-cap"></i>
+          <span>July 2021</span>
+          <h3>PHP Developer</h3>
+          <p>
+            Gaining a deeper understanding of interface design and responsive layout, I started using PHP for backend server-side data management.
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-graduation-cap"></i>
+          <span>2021</span>
+          <h3>Independent Frontend Webmaster</h3>
+          <p>
+            In addition to HTML + CSS + JS, I use Bootstrap or Tailwind CSS for quickly designing responsive templates.
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-graduation-cap"></i>
+          <span>August 2021</span>
+          <h3>PHP/Symfony Developer</h3>
+          <p>
+            I moved on to building modern web applications using PHP frameworks, particularly Symfony.
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-graduation-cap"></i>
+          <span>July 2022 -</span>
+          <h3>Java/Spring Developer</h3>
+          <p>
+            Developing enterprise applications (API, web services) using Java and its Spring framework. Mastering OOP, design patterns, dependency injection, and more.
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-graduation-cap"></i>
+          <span>October 2022 -</span>
+          <h3>TypeScript/Angular Developer</h3>
+          <p>
+            Diving deep into complex and large-scale user interfaces using Angular and TypeScript. Types, structure, design, animation, reactivity — everything is here!
+          </p>
+        </div>
+      </article>
+    </section>
+    <!-- End Education Section -->
 
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">My<span> Projects</span></h2>
+      <div class="box-container">
+        <div class="box">
+          <img src="assets/image/portfolio/ik-portfolio-1.png" alt="" />
+          <div class="overlay">
+            <a
+              href="assets/image/portfolio/ik-portfolio-1.png"
+              class="fa fa-eye"
+              data-lightbox="myportfolio"
+            ></a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="assets/image/portfolio/ik-portfolio-2.png" alt="" />
+          <div class="overlay">
+            <a
+              href="assets/image/portfolio/ik-portfolio-2.png"
+              class="fa fa-eye"
+              data-lightbox="myportfolio"
+            ></a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="assets/image/portfolio/ik-portfolio-3.png" alt="" />
+          <div class="overlay">
+            <a
+              href="assets/image/portfolio/ik-portfolio-3.png"
+              class="fa fa-eye"
+              data-lightbox="myportfolio"
+            ></a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="assets/image/portfolio/ik-portfolio-4.png" alt="" />
+          <div class="overlay">
+            <a
+              href="assets/image/portfolio/ik-portfolio-4.png"
+              class="fa fa-eye"
+              data-lightbox="myportfolio"
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Portfolio Section -->
 
-    form input,
-    form textarea {
-      padding: 0.5rem;
-      margin-top: 0.5rem;
-      width: 100%;
-      max-width: 400px;
-    }
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span> Me</span></h2>
+      <form action="">
+        <div class="inputBox">
+          <input type="text" placeholder="Your name" />
+        </div>
+        <div class="inputBox">
+          <input type="email" placeholder="Your email" />
+        </div>
+        <div class="inputBox">
+          <textarea placeholder="Write your message"></textarea>
+        </div>
+        <div class="inputBox">
+          <input type="submit" value="Send" />
+        </div>
+      </form>
+    </section>
+    <!-- End Contact Section -->
 
-    form input[type="submit"] {
-      width: auto;
-      background-color: #333;
-      color: white;
-      border: none;
-      padding: 0.5rem 1rem;
-      cursor: pointer;
-    }
-
-    form input[type="submit"]:hover {
-      background-color: #555;
-    }
-  </style>
-</head>
-
-<body>
-
-  <!-- Navigation Bar -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Home Section -->
-  <section id="home">
-    <h1>Welcome to My Portfolio</h1>
-    <p>Hi, I’m Alban Okoby, a passionate Software Engineering student at Gomycode. I’m currently learning and developing
-      my skills in various technologies to become a proficient software engineer.</p>
-  </section>
-
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am currently studying Software Engineering at Gomycode, where I am gaining practical knowledge and hands-on
-      experience with software development. My goal is to build scalable, efficient, and user-friendly applications.</p>
-    <p>I am particularly interested in web development, coding best practices, and solving real-world problems using
-      technology.</p>
-    <iframe width="869" height="489" src="https://www.youtube.com/embed/zcTFG_F0FRs" title="GOMYCODE HACKS HACKATHON" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-      <p>Your browser does not support the video element.</p>
-    </iframe>
-  </section>
-
-  <!-- Work Section -->
-  <section id="work">
-    <h2>My Work</h2>
-    <p>Here are some of the projects I’ve worked on during my learning journey:</p>
-    <ul>
-      <li><strong>Project 1:</strong> A simple web application to track daily tasks and productivity.</li>
-      <li><strong>Project 2:</strong> A basic e-commerce website with a shopping cart functionality.</li>
-      <li><strong>Project 3:</strong> A portfolio website to showcase my skills and projects (this one!).</li>
-    </ul>
-  </section>
-
-  <!-- Resume Section -->
-  <section id="resume">
-    <h2>My Resume</h2>
-    <p>Currently, I am working on gaining experience in the field and building my portfolio through personal projects
-      and challenges.</p>
-    <table>
-      <thead>
-        <tr>
-          <th>Position</th>
-          <th>Company</th>
-          <th>Duration</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Software Engineering Intern</td>
-          <td>Gomycode (Internship)</td>
-          <td>2025 - Present</td>
-        </tr>
-        <tr>
-          <td>Freelance Web Developer</td>
-          <td>Self-employed</td>
-          <td>2024 - Present</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form action="#" method="POST">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required><br><br>
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required><br><br>
-
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message" rows="4" required></textarea><br><br>
-
-      <input type="submit" value="Send Message">
-    </form>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Alban Okoby. All rights reserved.</p>
-  </footer>
-
-</body>
-
+    <!-- Footer Section -->
+    <footer>
+      <p>Designed by <span>Alban Okoby</span> - Cerveau+ | Feb 2025</p>
+    </footer>
+  </body>
 </html>
