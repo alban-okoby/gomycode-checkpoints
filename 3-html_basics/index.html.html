@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alban Okoby - Software Engineer</title>
+  <link rel="stylesheet" href="styles.css"> <!-- External CSS for styling -->
+  <style>
+    /* styles.css */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 2rem;
+      margin: 1rem;
+      background-color: white;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    form input,
+    form textarea {
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    form input[type="submit"] {
+      width: auto;
+      background-color: #333;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+
+    form input[type="submit"]:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Hi, I’m Alban Okoby, a passionate Software Engineering student at Gomycode. I’m currently learning and developing
+      my skills in various technologies to become a proficient software engineer.</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am currently studying Software Engineering at Gomycode, where I am gaining practical knowledge and hands-on
+      experience with software development. My goal is to build scalable, efficient, and user-friendly applications.</p>
+    <p>I am particularly interested in web development, coding best practices, and solving real-world problems using
+      technology.</p>
+    <iframe width="869" height="489" src="https://www.youtube.com/embed/zcTFG_F0FRs" title="GOMYCODE HACKS HACKATHON" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      <p>Your browser does not support the video element.</p>
+    </iframe>
+  </section>
+
+  <!-- Work Section -->
+  <section id="work">
+    <h2>My Work</h2>
+    <p>Here are some of the projects I’ve worked on during my learning journey:</p>
+    <ul>
+      <li><strong>Project 1:</strong> A simple web application to track daily tasks and productivity.</li>
+      <li><strong>Project 2:</strong> A basic e-commerce website with a shopping cart functionality.</li>
+      <li><strong>Project 3:</strong> A portfolio website to showcase my skills and projects (this one!).</li>
+    </ul>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume">
+    <h2>My Resume</h2>
+    <p>Currently, I am working on gaining experience in the field and building my portfolio through personal projects
+      and challenges.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Position</th>
+          <th>Company</th>
+          <th>Duration</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Software Engineering Intern</td>
+          <td>Gomycode (Internship)</td>
+          <td>2025 - Present</td>
+        </tr>
+        <tr>
+          <td>Freelance Web Developer</td>
+          <td>Self-employed</td>
+          <td>2024 - Present</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="#" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+      <input type="submit" value="Send Message">
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Alban Okoby. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>
