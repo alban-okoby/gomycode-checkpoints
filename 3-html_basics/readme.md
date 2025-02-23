@@ -5,4 +5,4 @@
 
 <img src="./screenshots/work_resume.PNG" />
 
-<img src="./screenshots/contact_footer.PNG />
+<img src="./screenshots/contact_footer.PNG" />
