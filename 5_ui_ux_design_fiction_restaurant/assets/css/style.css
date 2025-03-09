@@ -1,0 +1,23 @@
+.hero-section {
+    background-image: url('../image/brand.png');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.bg-light {
+    box-shadow: 0 0 .825rem rgba(0, 0, 0, 1.5);
+}
+.bg-yellow {
+    background-color: #927a06 !important;
+    color: white !important;
+}
+.menu-item-card {
+    transition: transform 0.3s;
+}
+
+.menu-item-card:hover {
+    transform: scale(1.05);
+}
+
