@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TechNova Store - Modern Electronics" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Alban Okoby | okoby Emmanuel Alban" />
+  <meta
+    name="description"
+    content="Emmanuel Alban Okoby is a developer, trainer and supervisor who designs interfaces for websites and web applications | this is one of his personal works I named Personal TechNova Store"
+  />
+  <title>TechNova Store - Modern Electronics</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="assets/image/logo.png" alt="TechNova Logo" height="40">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero-section text-center" id="home">
+    <div class="container">
+      <h1 class="display-4 mb-4">Discover the Future of Technology</h1>
+      <p class="lead mb-5">Cutting-edge electronics for the modern world</p>
+      <a href="#products" class="btn btn-primary btn-lg px-5 py-3">Shop Now</a>
+    </div>
+  </div>
+
+  <!-- Product Section -->
+  <div class="container py-5" id="products">
+    <h2 class="text-center mb-5">Our Latest Products</h2>
+    <div class="row">
+      <div class="col-md-3 mb-4">
+        <div class="card product-card">
+          <img src="assets/image/smartphone.png" class="card-img-top" alt="Smartphone">
+          <div class="card-body text-center">
+            <h5 class="card-title">NextGen Smartphone</h5>
+            <p class="card-text text-muted">Advanced 5G smartphone with quad-camera system</p>
+            <p class="h5 mb-3">$799.99</p>
+            <a href="#" class="btn btn-shop">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="card product-card">
+          <img src="assets/image/wireless-earbuds.png" class="card-img-top" alt="Wireless Earbuds">
+          <div class="card-body text-center">
+            <h5 class="card-title">Pro Wireless Earbuds</h5>
+            <p class="card-text text-muted">Noise-cancelling earbuds with 30hr battery life</p>
+            <p class="h5 mb-3">$199.99</p>
+            <a href="#" class="btn btn-shop">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="card product-card">
+          <img src="assets/image/smart-watch.png" class="card-img-top" alt="Smart Watch">
+          <div class="card-body text-center">
+            <h5 class="card-title">Health Tracker Watch</h5>
+            <p class="card-text text-muted">Advanced fitness tracking with heart rate monitor</p>
+            <p class="h5 mb-3">$249.99</p>
+            <a href="#" class="btn btn-shop">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="card product-card">
+          <img src="assets/image/laptop.png" class="card-img-top" alt="Laptop">
+          <div class="card-body text-center">
+            <h5 class="card-title">UltraBook Pro</h5>
+            <p class="card-text text-muted">Lightweight laptop with powerful performance</p>
+            <p class="h5 mb-3">$1,299.99</p>
+            <a href="#" class="btn btn-shop">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="container py-5" id="about">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="assets/image/tech-store-interior.png" class="img-fluid rounded" alt="Store Interior">
+      </div>
+      <div class="col-md-6">
+        <h2 class="mb-4">About TechNova</h2>
+        <p>
+          TechNova is a leading technology retailer committed to bringing the latest 
+          and most innovative electronics to tech enthusiasts. We curate cutting-edge 
+          products that enhance your digital lifestyle.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="container py-5" id="contact">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer py-4 text-center">
+    <div class="container">
+      <p class="mb-2">&copy; 2025 TechNova Store. All Rights Reserved. Build by <a href="https://github.com/alban-okoby" target="_blank">Alban Okoby</a> </p>
+      <div class="social-icons">
+        <a href="#" class="text-dark me-3"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="text-dark me-3"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-dark"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
