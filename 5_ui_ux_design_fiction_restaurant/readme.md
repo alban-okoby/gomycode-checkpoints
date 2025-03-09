@@ -1,4 +1,4 @@
-## CSS (portfolio project)
+## UI/UX_FRONTEND (Restaurant Landing Project)
 <img src="./screenshots/header.png" />
 
 <img src="./screenshots/dishes.png" />
