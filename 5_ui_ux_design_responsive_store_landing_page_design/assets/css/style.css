@@ -9,7 +9,7 @@
 
   .hero-section {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                url('https://maxm-imggenurl.web.val.run/tech-store-hero');
+                url('../image/tech-store-hero.png');
     background-size: cover;
     background-position: center;
     color: white;
