@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Tailwind CSS Portfolio</title>
+    <style>
+        /* @media screen and (max-width: 768px) {    */
+            img {
+                max-height: 13rem;
+                width: 100%;
+            /* } */
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="max-w-6xl mx-auto px-4 py-6 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Alban Okoby 🖐🏽</h1>
+            <nav class="space-x-6">
+                <a href="#" class="text-gray-700 hover:text-blue-600">Home</a>
+                <a href="#projects" class="text-gray-700 hover:text-blue-600">Projects</a>
+                <a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center h-[60vh] flex items-center justify-center text-center"
+        style="background-image: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+        <div class="bg-black bg-opacity-50 p-10 rounded">
+            <h2 class="text-white text-4xl md:text-6xl font-bold">Hi, I'm Alban Okoby</h2>
+            <p class="text-white mt-4 text-lg">Software Developer | Tech Solution Enthusiast</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-16 bg-white" id="skills">
+        <div class="max-w-6xl mx-auto px-4">
+            <h3 class="text-3xl font-bold mb-8 text-center">Skills</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-4 bg-gray-100 rounded shadow">HTML</div>
+                <div class="p-4 bg-gray-100 rounded shadow">CSS & SCSS</div>
+                <div class="p-4 bg-gray-100 rounded shadow">Tailwind CSS</div>
+                <div class="p-4 bg-gray-100 rounded shadow">JavaScript</div>
+                <div class="p-4 bg-gray-100 rounded shadow">TypeScript</div>
+                <div class="p-4 bg-gray-100 rounded shadow">Java</div>
+                <div class="p-4 bg-gray-100 rounded shadow">Spring</div>
+                <div class="p-4 bg-gray-100 rounded shadow">Angular</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-16 bg-gray-50" id="projects">
+        <div class="max-w-6xl mx-auto px-4">
+            <h3 class="text-3xl font-bold mb-10 text-center">My public projects</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Project Card -->
+                <div class="bg-white rounded shadow p-4">
+                    <img src="https://github.com/alban-okoby/quanpay/blob/main/webapp/public/assets/screensshots/dash.png?raw=true"
+                        class="rounded mb-4" alt="Project Image">
+                    <h4 class="text-xl font-semibold">QuanPay</h4>
+                    <p class="text-gray-600 mt-2">Transfert solution designed to simplify and secure the way individuals
+                        and businesses send and receive money</p>
+                </div>
+                <div class="bg-white rounded shadow p-4">
+                    <img src="https://github.com/alban-okoby/bankdash/blob/main/screens/dash.png?raw=true"
+                        class="rounded mb-4" alt="BankDash Project Image">
+                    <h4 class="text-xl font-semibold">BankDash</h4>
+                    <p class="text-gray-600 mt-2">Modern and customizable UI admin kit built specifically for banking,
+                        finance, and fintech applications.</p>
+                </div>
+                <div class="bg-white rounded shadow p-4">
+                    <a href="https://github.com/alban-okoby/github_clone/tree/main" target="_blank">
+                        <img src="https://github.com/alban-okoby/github_clone/blob/main/assets/images/demo/guest_page.png?raw=true"
+                            class="rounded mb-4" alt="Project Image">
+                        <h4 class="text-xl font-semibold">Github UI Clone</h4>
+                        <p class="text-gray-600 mt-2">Functionalities of this github_clone:
+                            Authentification, Register, Create and list of repositories by username
+                            Search repository.
+                        </p>
+                    </a>
+                </div>
+                <div class="bg-white rounded shadow p-4">
+                    <img src="https://camo.githubusercontent.com/acd62aae1d24c6b973e0763a5f6a92588105a2c6e6f1aa1c5b04b2aa20d599b0/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f696e7472616e65742d70726f6a656374732d66696c65732f686f6c626572746f6e7363686f6f6c2d6c6f775f6c6576656c5f70726f6772616d6d696e672f3233352f7368656c6c2e6a706567"
+                        class="rounded mb-4" alt="Project Image">
+                    <h4 class="text-xl font-semibold">Simple Shell (Contribution)</h4>
+                    <p class="text-gray-600 mt-2">Simple_Shell is a simple UNIX command interpreter that replicates functionalities of the simple shell (sh). This program was written entirely in C Language.</p>
+                </div>
+                <div class="bg-white rounded shadow p-4">
+                    <a href="https://github.com/UcheCom/LearnXcel/" target="_blank">
+                        <img src="https://media.licdn.com/dms/image/v2/D4E2DAQH2pAO-YU4OHw/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1719360163079?e=1745406000&v=beta&t=nHs8wxeeIErblMU-ML42jWHN4egTRamBLcHp32DLfv0"
+                        class="rounded mb-4" alt="Project Image">
+                        <h4 class="text-xl font-semibold">LearnXcel (Contribution)</h4>
+                        <p class="text-gray-600 mt-2">Interactive online platform designed to facilitate learning through engaging courses, quizzes, and interactive content.</p>
+                    </a>
+                </div>
+                <div class="bg-white rounded shadow p-4">
+                    <a href="https://github.com/alban-okoby/responsive-team-card-with-hover-effect/" target="_blank">
+                        <img src="https://github.com/alban-okoby/responsive-team-card-with-hover-effect/blob/main/screen/sm-hover-view.png?raw=true"
+                        class="rounded mb-4" alt="Project Image">
+                        <h4 class="text-xl font-semibold">Responsive-team-card-with-hover-effect</h4>
+                        <p class="text-gray-600 mt-2">Build an awesome responsive team card with hover effect</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="py-16 bg-white" id="contact">
+        <div class="max-w-2xl mx-auto px-4">
+            <h3 class="text-3xl font-bold mb-8 text-center">Contact Me</h3>
+            <form class="space-y-6">
+                <div>
+                    <label class="block mb-2 font-medium">Name</label>
+                    <input type="text"
+                        class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                </div>
+                <div>
+                    <label class="block mb-2 font-medium">Email</label>
+                    <input type="email"
+                        class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                </div>
+                <div>
+                    <label class="block mb-2 font-medium">Message</label>
+                    <textarea
+                        class="w-full border border-gray-300 rounded px-4 py-2 h-32 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                </div>
+                <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6 mt-16">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <p>&copy; 2025 Alban Okoby. All rights reserved.</p>
+            <div class="flex space-x-4 mt-4 md:mt-0">
+                <a href="#" class="hover:text-blue-400">🐦</a>
+                <a href="#" class="hover:text-blue-600">💼</a>
+                <a href="#" class="hover:text-pink-500">📸</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
