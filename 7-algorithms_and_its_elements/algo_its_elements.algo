@@ -1,0 +1,38 @@
+Algorithm AnalyzeSentence
+VAR
+   i: INTEGER;
+   length: INTEGER;
+   word_count: INTEGER;
+   vowel_count: INTEGER;
+   char: CHARACTER; 
+BEGIN
+   length := 0; 
+   word_count := 0;
+   vowel_count := 0;
+
+   // Start reading the sentence character by character
+   FOR i FROM 0 TO sentence.length - 1 DO
+       char := sentence[i];  
+       length := length + 1;
+
+       // if the character is a vowel (both lowercase and uppercase)
+       IF char IN ('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U') THEN
+           vowel_count := vowel_count + 1; 
+       END IF
+
+       // if the character is a space
+       IF char = ' ' THEN
+           word_count := word_count + 1;
+       END IF
+
+       // If the character is a period, the sentence ends
+       IF char = '.' THEN
+           BREAK;
+       END IF
+   END_FOR
+
+   // Adjust the word count for the last word (since it is not followed by a space)
+   IF length > 1 THEN
+       word_count := word_count + 1;
+   END IF
+END
