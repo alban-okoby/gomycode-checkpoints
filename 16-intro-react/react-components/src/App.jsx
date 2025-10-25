@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { Card, Container } from "react-bootstrap";
+// Import our components
 import Name from './components/Name';
 import Description from './components/Description';
 import Image from './components/Image';

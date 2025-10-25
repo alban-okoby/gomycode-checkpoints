@@ -1,6 +1,7 @@
 import React from "react";
 import product from "../../data/products";
 
+// Image component
 function Image() {
   return (
     <img
