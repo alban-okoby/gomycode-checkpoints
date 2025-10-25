@@ -13,6 +13,7 @@ const firstName = "Alban";
 function App() {
   return (
     <>
+      {/* Display our card */}
       <Container className="d-flex flex-column align-items-center mt-5">
       <Card style={{ width: "22rem", boxShadow: "0 4px 10px rgba(0,0,0,0.2)" }}>
         <Card.Body className="text-center">
@@ -23,6 +24,7 @@ function App() {
         </Card.Body>
       </Card>
 
+      {/* Display the name and image */}
       <div className="mt-3 text-center">
         {firstName ? (
           <>
