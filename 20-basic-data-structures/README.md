@@ -4,7 +4,7 @@
 
 #### Demo 
 
-[![Demo C](https://www.youtube.com/watch?v=QL5_A9wlhfg)](https://www.youtube.com/watch?v=QL5_A9wlhfg)
+[Demo youtube](https://youtu.be/QL5_A9wlhfg)
 
 <video src='https://youtu.be/QL5_A9wlhfg?si=iqlUUAGbAepXhXBO' width=180/>
 
