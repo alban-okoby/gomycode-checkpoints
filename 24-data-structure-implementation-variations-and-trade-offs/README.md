@@ -5,5 +5,8 @@ implement two different variations of a Queue and a Priority Queue to practice u
 #### Array Queue Tests case
 <img src="./screens/array.png" />
 
+#### List based Queue Tests case
+<img src="./screens/list.png" />
+
 #### Min Heap Priority Queue Tests case
 <img src="./screens/minheap.png" />
