@@ -10,3 +10,6 @@ implement two different variations of a Queue and a Priority Queue to practice u
 
 #### Min Heap Priority Queue Tests case
 <img src="./screens/minheap.png" />
+
+#### Ordered Array Based Priority Queue Tests case
+<img src="./screens/ordered.png" />
