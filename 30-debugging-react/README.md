@@ -26,6 +26,8 @@ export default Counter;
   const increment = () => setCount(count + 1);
 ```
 
+<img src="./public/screens/counter.png" />
+
 ## Available Scripts
 
 In the project directory, you can run:
