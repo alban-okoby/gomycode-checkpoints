@@ -12,6 +12,11 @@ This project demonstrates clean architecture, modular design, and extensibility 
 npm run start
 ```
 
+Test case
+```
+npm run test
+```
+
 ## Features
 
 - User management (Students & Teachers)
