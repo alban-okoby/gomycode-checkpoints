@@ -1,0 +1,24 @@
+{
+  "name": "33-lms",
+  "version": "1.0.0",
+  "description": "Smart Library Management System",
+  "homepage": "https://github.com/alban-okoby/gomycode-checkpoints/33-lms",
+  "bugs": {
+    "url": "https://github.com/alban-okoby/gomycode-checkpoints/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alban-okoby/gomycode-checkpoints.git"
+  },
+  "license": "ISC",
+  "author": "Alban Okoby",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0"
+  }
+}
