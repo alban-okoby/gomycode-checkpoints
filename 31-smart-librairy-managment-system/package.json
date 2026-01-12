@@ -1,0 +1,20 @@
+{
+  "name": "31-smart-librairy-managment-system",
+  "version": "1.0.0",
+  "description": "Smart Library Management System",
+  "homepage": "https://github.com/alban-okoby/gomycode-checkpoints/31-smart-librairy-managment-system",
+  "bugs": {
+    "url": "https://github.com/alban-okoby/gomycode-checkpoints/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alban-okoby/gomycode-checkpoints.git"
+  },
+  "license": "ISC",
+  "author": "alban-okoby",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  }
+}
