@@ -1,0 +1,14 @@
+{
+  "name": "38-to-do-app-restful",
+  "version": "1.0.0",
+  "description": "A simple but functional **RESTful To-Do List backend** built using **only Node.js core modules**.   No frameworks. No database. All data is stored **in memory**.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
