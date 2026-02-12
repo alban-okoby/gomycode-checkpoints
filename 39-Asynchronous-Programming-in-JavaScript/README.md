@@ -2,6 +2,17 @@
 
 This repository contains examples of using `async/await` in JavaScript for sequential, concurrent, and parallel asynchronous operations.
 
+## How to run each file ? 
+```bash
+node fileName.js
+```
+For example for the first one (1-async-await.js)
+## How to run each file ? 
+```bash
+node 1-async-await.js
+```
+
+
 ## Task 01: Iterating with Async/Await
 Logs each value from an array with a 1-second delay.
 
