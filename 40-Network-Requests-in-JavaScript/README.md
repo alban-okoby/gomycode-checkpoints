@@ -16,4 +16,10 @@ This repository contains examples of using `Network Request` in JavaScript
 
 - Simply open the index.html file in a web browser
 - The app will load weather data for London by default
-- Search for any city to get its current weather
+
+<img src="./screen/london.png" />
+
+
+Search for any city to get its current weather
+
+<img src="./screen/abidjan.png" />
