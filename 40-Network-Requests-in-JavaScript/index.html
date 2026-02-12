@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        
+        <div class="search-container">
+            <input type="text" id="city-input" placeholder="Enter city name..." value="London">
+            <button id="search-btn">Get Weather</button>
+        </div>
+        
+        <div id="weather-info" class="weather-card hidden">
+            <div class="location">
+                <h2 id="city-name">-</h2>
+                <p id="country">-</p>
+            </div>
+            
+            <div class="weather-details">
+                <div class="temperature">
+                    <span id="temp">-</span>°C
+                </div>
+                <div class="condition">
+                    <img id="weather-icon" src="" alt="Weather icon">
+                    <span id="weather-desc">-</span>
+                </div>
+                <div class="extra-info">
+                    <div class="info-item">
+                        <span>Humidity</span>
+                        <span id="humidity">-</span>%
+                    </div>
+                    <div class="info-item">
+                        <span>Wind Speed</span>
+                        <span id="wind-speed">-</span> km/h
+                    </div>
+                    <div class="info-item">
+                        <span>Feels Like</span>
+                        <span id="feels-like">-</span>°C
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="error-message" class="error hidden">
+            City not found. Please try again.
+        </div>
+        
+        <div class="loading hidden" id="loading">
+            Loading...
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
