@@ -1,6 +1,3 @@
-// readFile.js
-// Task 1: Using built-in fs module to read a file
-
 // Load the built-in fs module
 const fs = require('fs');
 

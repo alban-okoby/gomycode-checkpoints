@@ -22,3 +22,16 @@ node readFile.js
 ```
 <img src="./screen/task1.png" />
 
+### Run Task 2
+``` 
+node main.js
+```
+
+### Run Task 3
+``` 
+node emailSender.js
+```
+<img src="./screen/sent.png" />
+<img src="./screen/resultSent.png" />
+<img src="./screen/resultSent2.png" />
+
