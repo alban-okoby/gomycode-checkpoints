@@ -1,0 +1,3 @@
+Hello from the file system module!
+Welcome to Node.js built-in modules.
+This text is being read using the fs module.
