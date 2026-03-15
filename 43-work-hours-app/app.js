@@ -15,9 +15,9 @@ app.use((req, res, next) => {
   const day = now.getDay(); // 0 = Sunday, 6 = Saturday
   const hour = now.getHours();
 
-//   if (day === 0 || day === 6 || hour < 9 || hour >= 17) {
-//     return res.send('<h1>Sorry, the site is only available during working hours (Mon-Fri, 9-17)</h1>');
-//   }
+  if (day === 0 || day === 6 || hour < 9 || hour >= 17) {
+    return res.send('<h1>Sorry, the site is only available during working hours (Mon-Fri, 9-17)</h1>');
+  }
 
   next();
 });
