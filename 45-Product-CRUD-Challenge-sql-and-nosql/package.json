@@ -1,0 +1,27 @@
+{
+  "name": "45-product-crud-challenge-sql-and-nosql",
+  "version": "1.0.0",
+  "description": " Product CRUD Challenge: SQL & NoSQL Edition",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "node tests/test-api.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alban-okoby/gomycode-checkpoints.git"
+  },
+  "author": "Alban Okoby",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alban-okoby/gomycode-checkpoints/issues"
+  },
+  "homepage": "https://github.com/alban-okoby/gomycode-checkpoints#readme",
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "mongoose": "^9.3.3",
+    "mysql2": "^3.20.0",
+    "nodemon": "^3.1.14"
+  }
+}
