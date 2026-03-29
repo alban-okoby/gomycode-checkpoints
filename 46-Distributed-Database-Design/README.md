@@ -1,5 +1,7 @@
 # Mini Banking System - Transaction Management
 
+## PART I: Transaction Management (Conceptual)
+
 ## Overview
 This module simulates transaction management for a mini banking system where users can:
 - Transfer money between accounts
@@ -57,3 +59,85 @@ The schedule is **safe**; no lost updates occur.
 - **Lock Type:** Exclusive (X-lock)  
 - **Locking Strategy:** Pessimistic locking  
 - **Result:** Prevents simultaneous updates, ensuring account balances remain consistent.
+
+
+## Part II: Distributed Database Planning (High-Level)
+The focus is on:
+- Horizontal and vertical fragmentation
+- Data replication
+- Allocation strategies for transaction history
+
+---
+
+## 1. Horizontal Fragmentation
+
+**Strategy:** Split tables based on **rows** (branch location).  
+
+Example: Customers table  
+
+| Fragment           | Criteria            |
+|------------------|-------------------|
+| Customers_Tunis    | branch = 'Tunis'  |
+| Customers_Sousse   | branch = 'Sousse' |
+| Customers_Sfax     | branch = 'Sfax'   |
+
+- Each fragment contains **only customers for that branch**.
+- Improves **local query performance** and reduces network load.
+
+---
+
+## 2. Vertical Fragmentation
+
+**Strategy:** Split tables based on **columns**.  
+
+Example: Separate sensitive login info  
+
+| Table               | Columns                               |
+|--------------------|---------------------------------------|
+| Customers (main)    | CustomerID (PK), Name, Branch         |
+| Customer_Login      | CustomerID (PK/FK), Email, PasswordHash |
+
+- Enhances **security** and **performance**.
+- Primary key is included in all fragments to allow reconstruction.
+
+---
+
+## 3. Data Replication
+
+**Which data to replicate across all branches:**  
+
+| Data Type           | Replication Strategy       | Reason |
+|-------------------|--------------------------|--------|
+| Account balances   | Full replication          | Must be consistent for transfers between branches |
+| Customer info      | Optional/partial          | Useful for cross-branch services |
+| Transaction history| Partial/dynamic           | Large volume; replicated based on access patterns |
+
+- **Full replication** for critical, frequently accessed data ensures **high availability**.
+- Transaction history is **not fully replicated** to save storage and reduce network traffic.
+
+---
+
+## 4. Allocation Strategy for Transaction History
+
+- **Dynamic allocation** recommended:  
+  - Transaction history grows frequently and access patterns vary across branches.  
+  - Fragments are stored **locally** per branch and can be **replicated dynamically** if needed.  
+  - Reduces storage overhead and improves performance.
+
+---
+
+## Summary Table
+
+| Aspect                        | Strategy / Notes |
+|--------------------------------|----------------|
+| Horizontal fragmentation        | Split Customers table by branch |
+| Vertical fragmentation          | Move login info to separate table |
+| Replication                     | Account balances: full; Customer info: partial; Transaction history: dynamic |
+| Transaction history allocation  | Dynamic allocation for growth & efficiency |
+
+---
+
+## Notes
+
+- Combining **fragmentation and replication** allows the system to handle **local queries efficiently** while maintaining **global consistency** for critical data.  
+- The design supports scalability, branch autonomy, and reduces network congestion for cross-branch operations.
