@@ -1,0 +1,54 @@
+version: '3.9'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: university_db
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: university_db
+      MYSQL_USER: university_user
+      MYSQL_PASSWORD: university_pass
+    ports:
+      - "3307:3307" # MySQL expose le port standard 3306
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-prootpassword"]
+      timeout: 20s
+      retries: 10
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3307
+      PMA_ARBITRARY: 1
+    ports:
+      - "8080:80"
+    depends_on:
+      - mysql
+
+  node_app:
+    build: .
+    container_name: university_node_app
+    environment:
+      DB_HOST: mysql
+      DB_PORT: 3307
+      DB_USER: university_user
+      DB_PASSWORD: university_pass
+      DB_NAME: university_db
+    depends_on:
+      mysql:
+        condition: service_healthy
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: npm run dev # nodemon pour développement
+    ports:
+      - "3000:3000"
+
+volumes:
+  mysql_data:
