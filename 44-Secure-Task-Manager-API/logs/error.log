@@ -1,4 +1,7 @@
-[2026-03-16T17:58:33.735Z] 500 next is not a function 
-[2026-03-16T18:23:59.494Z] 401 Incorrect email or password 
-[2026-03-16T18:24:10.269Z] 401 Incorrect email or password 
-[2026-03-16T18:24:38.733Z] 401 Incorrect email or password 
+[2026-03-28T21:03:37.190Z] 500 next is not a function 
+[2026-03-28T21:04:45.058Z] 400 User already exists with this email 
+[2026-03-28T21:05:02.098Z] 401 Incorrect email or password 
+[2026-03-28T21:05:07.310Z] 401 Incorrect email or password 
+[2026-03-28T21:05:09.382Z] 401 Incorrect email or password 
+[2026-03-28T21:05:10.780Z] 401 Incorrect email or password 
+[2026-03-28T21:05:12.060Z] 401 Incorrect email or password 
